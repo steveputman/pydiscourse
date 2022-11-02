@@ -194,7 +194,7 @@ class DiscourseClient(object):
         Returns:
 
         """
-        response = self._get("/users/by-external/{0}".format(external_id))
+        response = self._get("/u/by-external/{0}".format(external_id))
         return response["user"]
 
     by_external_id = user_by_external_id
